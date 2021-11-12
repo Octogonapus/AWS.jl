@@ -4607,6 +4607,7 @@ Guide.
 Optional parameters can be passed as a `params::Dict{String,<:Any}`. Valid keys are:
 - `"CarrierGatewayId"`: The ID of the carrier gateway. You can only use this option when
   the VPC contains a subnet which is associated with a Wavelength Zone.
+- `"CoreNetworkArn"`:
 - `"DestinationPrefixListId"`: The ID of a prefix list used for the destination match.
 - `"LocalGatewayId"`: The ID of the local gateway.
 - `"TransitGatewayId"`: The ID of a transit gateway.
@@ -22280,6 +22281,7 @@ For more information, see Route tables in the Amazon Virtual Private Cloud User 
 # Optional Parameters
 Optional parameters can be passed as a `params::Dict{String,<:Any}`. Valid keys are:
 - `"CarrierGatewayId"`: [IPv4 traffic only] The ID of a carrier gateway.
+- `"CoreNetworkArn"`:
 - `"DestinationPrefixListId"`: The ID of the prefix list for the route.
 - `"LocalGatewayId"`: The ID of the local gateway.
 - `"LocalTarget"`: Specifies whether to reset the local route to its default target (local).
