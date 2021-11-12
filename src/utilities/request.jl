@@ -97,6 +97,8 @@ function submit_request(aws::AbstractAWSConfig, request::Request; return_headers
             end
         end
     catch e
+        flush(stream)
+
         if e isa HTTP.StatusError
             e = AWSException(e, stream)
         elseif !(e isa AWSException)

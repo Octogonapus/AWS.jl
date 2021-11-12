@@ -110,5 +110,6 @@ function _http_request(backend::DownloadsBackend, request::Request, response_str
             isa(e, Downloads.RequestError)
         )
         end
+        flush(response_stream)
     end
 end
